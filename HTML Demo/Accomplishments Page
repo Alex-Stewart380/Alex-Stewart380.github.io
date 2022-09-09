@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Accomplishments</h1>
+    <h6>The Following is a Gallery of Our Proudest Moments as a Club</h6>
+    <img src="Images/Stealing Candy From Babies Logo.png" width="1000" height="1000" <h6>This image is of one of the
+    very first thefts we made as a club.</h6>
+    <img src="Images/Stealing Candy Image 2.jpg" width="1000" height="1000" <h6>This image is one of our greatest heists
+    to date.</h6>
+    <img src="Images/Stealing Candy Image 3.png" width="1000" height="1000" <h6>This image is one of our greatest heists
+    to date.</h6>
+    <img src="Images/Stealing Candy Image 4.png" width="1000" height="1000" <h6>This image is one of our most expedient
+    heists, we only needed seconds to plan.</h6>
+
+
+</body>
+
+</html>
