@@ -7,49 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Thing</title>
     <style>
+        #blue-text {
+            color: blue;
+        }
+
+        #red-text {
+            color: red;
+        }
+
+        #orange-text {
+            color: orange;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        .big-text {
+            font-size: x-large;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        h3,
+        h4 {
+            color: aqua;
+        }
+
+        .special {
+            color: chartreuse;
+        }
+
+        .center-align {
+            text-align: center;
+        }
+
         body {
-            background-color: antiquewhite;
+            color: aquamarine;
         }
     </style>
 
 </head>
 
 <body>
-    <H1>My Favorite Things About School Are...</H1>
-    <h2>The Following</h2>
-    <ol>
-        <li> Debate Club</li>
-        <li>Lunch</li>
-        <li>Classes</li>
-    </ol>
-    <table>
+    <H1 id="blue-text">My Favorite Things About School Are...</H1>
+    <h2 id="red-text">The Following</h2>
+    <div class="special">
+        <ol>
+            <li> Debate Club</li>
+            <li>Lunch</li>
+            <li>Classes</li>
+        </ol>
+    </div>
+    <table class="right-align">
         <tr>
-            <Table>
+            <Table id="red-text">
                 <th>table</th>
                 <th>table</th>
                 <th>table</th>
             </Table>
-            <Table>
+            <Table id="red-text">
                 <th>table</th>
                 <th>table</th>
                 <th>table</th>
             </Table>
-            <Table>
+            <Table id="red-text">
                 <th>table</th>
                 <th>table</th>
                 <th>table</th>
             </Table>
-            <Table>
+            <Table id="red-text">
                 <th>table</th>
                 <th>table</th>
                 <th>table</th>
             </Table>
         </tr>
     </table>
-    <p>I had some difficulty in choosing favorite things because i think it is <br> somewhat unimportant to decide what
+    <p class="center-align">I had some difficulty in choosing favorite things because i think it is <br> somewhat
+        unimportant to
+        decide what
         ones most favorite thing is <br>and instead it is better to choose what you like in general <br> that being
         said, one thing that is not my favorite is typing walls of text and as such im done writing.</p>
-    <button><a href="https://www.w3docs.com/snippets/html/how-to-set-background-color-in-html.html">How to make a
+    <button class="center-align"><a
+            href="https://www.w3docs.com/snippets/html/how-to-set-background-color-in-html.html">How to make a
             Background
             color</a></button><br>
     <img src="Images\Debate Logo.webp" alt="Debate Logo" width="500" height="500">
