@@ -1,0 +1,9 @@
+.margins {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    background-color: blanchedalmond;
+    border: 5px solid rebeccapurple;
+    margin: 25px 50px;
+}
