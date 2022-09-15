@@ -42,39 +42,57 @@
             color: chartreuse;
             font-size: 40px;
         }
+
+        .margins {
+            padding-top: 50px;
+            padding-right: 100px;
+            padding-bottom: 50px;
+            padding-left: 100px;
+            background-color: blanchedalmond;
+            border: 5px solid rebeccapurple;
+            margin: 25px 50px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px, solid black;
+        }
     </style>
 </head>
 
 <body>
-    <h1 style="color:darksalmon">Today we will learn about adding style via CSS</h1>
-    <h2>This is how we will add style with inline</h2>
-    <p style="color:seagreen;"> This is a seagreen paragraph.</p>
-    <p style="color:rgb(235, 11, 223);font-size: 50px;">This is an RGB 235,11,223 with font size 50 px</p>
-    <p style="color:red;text-align: center;font-size: 24px;background-color: coral;">This is a red, font size 24px,
-        centered paragraph with coral backround</p>
-    <h2>This is how we add style with internal CSS and ID selectors</h2>
-    <p id="blue-text">I want this text to be blue</p>
-    <p id="red-text">This one should be red</p>
-    <p id="orange-text">This text will be green, right aligned and 24 px</p>
-    <h2>This is how we add style with internal CSS and Class selectors</h2>
-    <p class="big-text">I want this text to be really big.</p>
-    <p class="big-text" class="right-align">I want this to be big and right-aligned</p>
-    <h2>This is how we use element selectors</h2>
-    <h3>I want this H3 to be aqua</h3>
-    <h4>I want this H4 to be aqua as well</h4>
-    <div class="special">
-        <p>This paragraph is part of the div</p>
-        <p>This paragraph is also part of the div</p>
-        <table>
-            <tr>
-                <th>Days of the week</th>
-                <th>Food</th>
-            </tr>
-            <tr>
-                <th>Monday</th>
-                <th>Spaghetti</th>
-            </tr>
-        </table>
+    <div class="margins">
+        <h1 style="color:darksalmon">Today we will learn about adding style via CSS</h1>
+        <h2>This is how we will add style with inline</h2>
+        <p style="color:seagreen;"> This is a seagreen paragraph.</p>
+        <p style="color:rgb(235, 11, 223);font-size: 50px;">This is an RGB 235,11,223 with font size 50 px</p>
+        <p style="color:red;text-align: center;font-size: 24px;background-color: coral;">This is a red, font size 24px,
+            centered paragraph with coral backround</p>
+        <h2>This is how we add style with internal CSS and ID selectors</h2>
+        <p id="blue-text">I want this text to be blue</p>
+        <p id="red-text">This one should be red</p>
+        <p id="orange-text">This text will be green, right aligned and 24 px</p>
+        <h2>This is how we add style with internal CSS and Class selectors</h2>
+        <p class="big-text">I want this text to be really big.</p>
+        <p class="big-text" class="right-align">I want this to be big and right-aligned</p>
+        <h2>This is how we use element selectors</h2>
+        <h3>I want this H3 to be aqua</h3>
+        <h4>I want this H4 to be aqua as well</h4>
+        <div class="special">
+            <p>This paragraph is part of the div</p>
+            <p>This paragraph is also part of the div</p>
+            <table>
+                <tr>
+                    <th>Days of the week</th>
+                    <th>Food</th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <th>Spaghetti</th>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 
