@@ -1,0 +1,112 @@
+.margins {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    background-color: black;
+    border: 5px solid darkgreen;
+    margin: 25px 50px;
+    text-align: center;
+    align-items: center;
+}
+
+p,
+h1,
+h3,
+h4,
+h5,
+h6 {
+    color: darkgreen;
+}
+
+h1:hover {
+    color: lightgreen;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(46, 46, 46);
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+ul li a:hover {
+    background-color: darkgreen;
+}
+
+table,
+
+th,
+
+td {
+
+    border: 3px solid darkslategrey;
+    margin: auto;
+
+
+}
+
+.greentext {
+    color: darkgreen;
+}
+
+@keyframes colorshift {
+    0% {
+        color: grey;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: green;
+    }
+}
+
+h6 {
+    position: relative;
+    animation-name: colorshift;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.img50 {
+    width: 50%;
+}
+
+.triplespace {
+    letter-spacing: 2.5px;
+    word-spacing: 5px;
+}
+
+#bigCookie {
+    z-index: 10000;
+    border-radius: 128px;
+}
