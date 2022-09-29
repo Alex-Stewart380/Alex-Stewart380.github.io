@@ -56,3 +56,15 @@ td {
 
 
 }
+
+#roman {
+    font-family: 'Times New Roman', serif;
+    color: black;
+    size: medium;
+}
+
+#verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    size: medium;
+}
