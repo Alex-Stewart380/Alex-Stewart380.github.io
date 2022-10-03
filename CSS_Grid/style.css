@@ -32,4 +32,69 @@ ul li a:hover {
 .grid-container {
     display: grid;
     gap: 50px 100px;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.main-image {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+}
+
+.main-1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.support-1 {
+    background-color: red;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.support-2 {
+    background-color: red;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.main-2 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.sidenav {
+    grid-column: 3;
+    grid-row: 3 / span 2;
+    background-color: azure;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: bisque;
+}
+
+.tangerine {
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/tangerine/v17/IurY6Y5j_oScZZow4VOxCZZM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-size: larger;
 }
