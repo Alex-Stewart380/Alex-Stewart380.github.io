@@ -50,7 +50,7 @@ ul li a:hover {
 
 .main-image {
     grid-column: 1 / span 3;
-    grid-row: 1 / span 3;
+    grid-row: 0 / span 2;
 }
 
 .main-1 {
@@ -59,13 +59,13 @@ ul li a:hover {
 }
 
 .support-1 {
-    background-color: red;
+    background-color: blanchedalmond;
     grid-column: 1;
     grid-row: 4;
 }
 
 .support-2 {
-    background-color: red;
+    background-color: blanchedalmond;
     grid-column: 2;
     grid-row: 4;
 }
@@ -77,7 +77,7 @@ ul li a:hover {
 
 .sidenav {
     grid-column: 3;
-    grid-row: 3 / span 2;
+    grid-row: 3 / span 1;
     background-color: azure;
 }
 
@@ -97,4 +97,8 @@ ul li a:hover {
     src: url(https://fonts.gstatic.com/s/tangerine/v17/IurY6Y5j_oScZZow4VOxCZZM.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     font-size: larger;
+}
+
+.body-text {
+    font-size: 16px;
 }
