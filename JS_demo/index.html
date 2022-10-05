@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Demo</title>
+</head>
+
+<body>
+    <h1>Lets Learn javascript</h1>
+    <h2>How do we do on-click events and alerts</h2>
+    <a href="https://www.eastsideprep.org/" target="_blank"
+        onclick="alert('Warning! You are navigating away from this page')">EPS</a>
+    <hr>
+    <h2>Whats my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById ('secret').innerHTML='Queen Elizabeth II'">Reveal</button>
+    <hr>
+    <h3>Two Truths And A Lie!</h3>
+    <ol>
+        <li>I think therefore i am</li>
+        <li>An Eye for An Eye Makes The World Blind</li>
+        <li>A Journey of a Thousand Miles Begins with a single step</li>
+    </ol>
+    <h4 id="lie"></h4>
+    <button
+        onclick="document.getElementById ('lie').innerHTML='The Lie is... #2, there is an odd number of people so it will only make 7,999,999,998 people blind'">Reveal</button>
+    <button onclick="document.getElementById ('lie').innerHTML=''">Hide</button>
+    <hr>
+    <h2>How Do We Change Images</h2>
+    <img src="Images/pigeon.jpg" alt="Pigeon" id="pigeon">
+    <button onclick="document.getElementById ('pigeon').src='Images/pigeon2.jpg'">Reveal The Truth</button>
+    <button onclick="document.getElementById ('pigeon').src='Images/pigeon.jpg'">Conceal The Truth</button>
+    <hr>
+    <button onclick="normalAlice;">Return to Normal</button>
+    <p id="alice">Hello i am Alice and i am in a wonderland</p>
+    <button
+        onclick="document.getElementById ('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake:"Eat
+        Me!"</button>
+    <button
+        onclick="document.getElementById ('alice').style.color='red'; document.getElementById('alice').style.fontSize='50px'">Mushroom:"Eat
+        Me!"</button>
+    <button onclick="normalAlice();">Return to Normal</button>
+    <hr>
+    <button onclick="askName()">What is Your Name?</button>
+    <p id="askname"></p>
+    <script> function normalAlice() {
+            let aliceParagraph = document.getElementById('alice')
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = '20px';
+        }
+        function askName() {
+            let nameParagraph = document.getElementById('askname');
+            let name = prompt("What is Your Name?")
+            // decide what to do
+            if (name === "Batman") {
+                nameParagraph.innerHTML = "Welcome to the Batcave, sir.";
+            } else {
+                nameParagraph.innerHTML = "Hello " + name + " Your Computer Has Been Infected with 13 Viruses and it is 73% destroyed, Click Below to fix!"
+            }
+        }
+    </script>
+</body>
+
+</html>

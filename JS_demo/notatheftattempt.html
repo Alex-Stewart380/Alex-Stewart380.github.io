@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script> function normalAlice() {
+            let aliceParagraph = document.getElementById('alice')
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = '20px';
+        }
+        function askName() {
+            let nameParagraph = document.getElementById('askname');
+            let name = prompt("What is Your Name?")
+            // decide what to do
+            if (name === "Batman") {
+                nameParagraph.innerHTML = "Welcome to the Batcave, sir.";
+            } else {
+                nameParagraph.innerHTML = "Hello " + name + " Nice to Meet you!"
+            }
+        }
+    </script>
+</body>
+
+</html>
