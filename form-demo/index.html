@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth and Lie Game Alex</title>
+</head>
+
+<body>
+    <h1>welcome</h1>
+    <p id="greet" style="font-size:x-large">Alex's Truth and A Lie Game</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"> <br>
+        <label for="lname">Age:</label><br>
+        <input type="text" id="age" name="age">
+    </form>
+    <input type="button" value="Submit" onclick="greet();">
+    <hr>
+
+
+    <h2>Trivia Question</h2>
+    <p>What is the only food that will not go bad?</p>
+    <p id="trivia-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia" id="chocolate">
+        <label for="chocolate">Dark Chocolate >70%</label> <br>
+        <input type="radio" name="trivia" id="honey">
+        <label for="chocolate">honey</label> <br>
+        <input type="radio" name="trivia" id="cheese">
+        <label for="cheese">Brierre Cheese</label> <br>
+        <input type="radio" name="trivia" id="wheat">
+        <label for="wheat">raw wheat</label> <br>
+    </form>
+    <hr>
+    <input type="button" value="Submit" onclick="trivia();">
+
+
+    <h2>Two Truths and a lie</h2>
+    <p>Two of these are true, one is false, select the lie.</p>
+    <p id="truth-answer"></p>
+    <form action="">
+        <input type="radio" name="truth" id="lie">
+        <label for="lie">I have a cat</label> <br>
+        <input type="radio" name="truth" id="truth">
+        <label for="truth">I have been to New York</label> <br>
+        <input type="radio" name="truth" id="truth2">
+        <label for="truth2">I have a sister</label> <br>
+    </form>
+    <input type="button" value="Submit" onclick="truths();">
+    <script src="js/game.js"></script>
+</body>
+
+</html>
