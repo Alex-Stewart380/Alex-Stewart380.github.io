@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Boostrap Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="navbar-brand">
+            <img src="Images\Alex.png" alt="Alex" height="50px">
+        </div>
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images\Mariners standings.jpg" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="Images\City-Skyline.jpg" alt="Chicago" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="Images\Canvas.jpg" alt="New York" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h2 class="text-white">This is my new element, a drop-down menu</h2>
+    <div class="btn-group-vertical">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">This is a dropdown
+                menu.</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">This is Item #1</a></li>
+                <li><a class="dropdown-item" href="#">This is Item #2</a></li>
+                <li><a class="dropdown-item" href="#">This is Item #3</a></li>
+                <li><a class="dropdown-item" href="#">This is Item #4</a></li>
+                <li><a class="dropdown-item" href="#">This is Item #5</a></li>
+            </ul>
+            <br>
+            <h6 class="text-white">Yes i know none of the links work</h6>
+        </div>
+    </div>
+    <div class="container text-white p-5 m-5 mx-5 border">
+        <h1>My first boostrap page</h1>
+        <p>This part is inside a computer fluid class.</p> <br>
+        <p>It takes up the entire width of the screen</p>
+    </div>
+    <div class="container text-white p-3 m-3 mx-3 border">
+        <h1>My second bootsrap section</h1>
+        <p>This part is inside a Container. Its margins are different to the one above.</p>
+        <p>It does not take up the entire width of the screen</p>
+    </div>
+    <div class="row text-white">
+        <div class="col-md-4">Column 1, spans 1/4
+            <a class="btn btn-primary" href="#" role="button">More on HTML</a>
+        </div>
+        <div class="col-md-4">Column 2, spans 5/8
+            <a class="btn btn-primary" href="#" role="button">More on CSS</a>
+        </div>
+        <div class="col-md-2">Column 3, spans 9/10
+            <a class="btn btn-primary" href="#" role="button">More on JS</a>
+        </div>
+        <div class="col-md-1">Column 4, spans 11
+            <a class="btn btn-primary" href="#" role="button">More on JS</a>
+        </div>
+        <div class="col-md-1">Column 5, spans 12
+            <a class="btn btn-primary" href="#" role="button">More on JS</a>
+        </div>
+    </div>
+</body>
+
+</html>
