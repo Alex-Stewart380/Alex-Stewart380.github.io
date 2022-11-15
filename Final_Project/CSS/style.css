@@ -22,13 +22,23 @@ td {
     size: larger;
 }
 
-.margins {
+.margins2 {
     padding-top: 50px;
     padding-right: 100px;
     padding-bottom: 50px;
     padding-left: 100px;
     background-color: rgb(250, 180, 50);
     border: 5px solid rgb(46, 187, 253);
+    margin: 25px 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.margins2 {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
     margin: 25px 50px;
     text-align: center;
     align-items: center;
