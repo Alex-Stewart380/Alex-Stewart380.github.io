@@ -1,0 +1,39 @@
+table,
+
+th,
+
+td {
+
+    border: 3px solid darkslategrey;
+    margin: auto;
+
+
+}
+
+.roman {
+    font-family: 'Times New Roman', serif;
+    color: rgb(3, 0, 170);
+    font-size: xx-large;
+}
+
+.verdana {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: black;
+    size: larger;
+}
+
+.margins {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    background-color: rgb(250, 180, 50);
+    border: 5px solid rgb(46, 187, 253);
+    margin: 25px 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.greentext {
+    color: darkgreen;
+}

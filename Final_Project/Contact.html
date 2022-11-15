@@ -11,66 +11,111 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Other Stylization-->
+    <link rel="stylesheet" href="CSS\style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yiz4use.css">
 </head>
 
 <body class="bg-warning">
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <div class="navbar-brand">
-            <img src="Images\Moose-icon.png" alt="Icon" height="50px">
-        </div>
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="About.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="Contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="row text-black">
-        <div class="col-md-4">
-            <h3>Contact Information</h3>
-            <ul>
-                <li>Address: <br>
-                    4015 Factoria Blvd SE, Bellevue, WA 98006</li>
-                <li>Email: <br> mightymoosecomics@gmail.com <br>
-                    fatmoose97@aol.com</li>
-                <li>Phone: <br>
-                    (425) 643-9924</li>
-                <li>Operating Hours: <br>
-                    Monday: 11:00 AM - 6:00 PM<br>
-                    Tuesday: 11:00 AM - 7:00 PM<br>
-                    Wednesday: 11:00 AM - 7:00 PM<br>
-                    Thursday: 11:00 AM - 6:00 PM<br>
-                    Friday: 11:00 AM - 7:00 PM<br>
-                    Saturday: 11:00 AM - 6:00 PM<br>
-                    Sunday: 11:00 AM - 6:00 PM<br>
+    <div class="margins">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="navbar-brand">
+                <img src="Images\Moose-icon.png" alt="Icon" height="50px">
+            </div>
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-                    After lock-down ends we will adjust our hours again.</li>
-            </ul>
+        <div class="row text-black">
+            <div class="col-md-8">
+
+            </div>
 
         </div>
-        <div class="text-white">
+        <div class="row text-white">
+            <div class="col-md-4">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>Address: <br>
+                        4015 Factoria Blvd SE, Bellevue, WA 98006</li>
+                    <li>Email: <br> mightymoosecomics@gmail.com <br>
+                        fatmoose97@aol.com</li>
+                    <li>Phone: <br>
+                        (425) 643-9924</li>
+                    <li>Operating Hours: <br>
+                        Monday: 11:00 AM - 6:00 PM<br>
+                        Tuesday: 11:00 AM - 7:00 PM<br>
+                        Wednesday: 11:00 AM - 7:00 PM<br>
+                        Thursday: 11:00 AM - 6:00 PM<br>
+                        Friday: 11:00 AM - 7:00 PM<br>
+                        Saturday: 11:00 AM - 6:00 PM<br>
+                        Sunday: 11:00 AM - 6:00 PM<br>
+
+                        After lock-down ends we will adjust our hours again.</li>
+                </ul>
+            </div>
             <div class="col-md-4">
                 <h3>We Are Conveniently Located in Factoria Shopping Center</h3>
                 <img src="Images\Google Map.jpg" alt="Map">
             </div>
-        </div>
-        <div class="col-md-4">
-            <h4>Social Media:</h4>
-            <a href="https://www.facebook.com/mightymoosecomics/"><img src="Images\facebook-logo-3.png" alt="Facebook"
-                    width="250px"></a>
-            <a href="https://twitter.com/mightymooseWA"><img src="Images\Twitter-Logo.png" alt="Twitter"
-                    width="250px"></a>
-            <a href="https://www.instagram.com/mightymoosecomics/"><img src="Images\Instagram_logo.webp"
-                    alt="Instragram" width="250px"></a>
+            <div class="col-md-4">
+                <h4>Social Media:</h4>
+                <a href="https://www.facebook.com/mightymoosecomics/"><img src="Images\facebook-logo-3.png"
+                        alt="Facebook" width="50px"></a>
+                <a href="https://twitter.com/mightymooseWA"><img src="Images\Twitter-Logo.png" alt="Twitter"
+                        width="50px"></a>
+                <a href="https://www.instagram.com/mightymoosecomics/"><img src="Images\Instagram_logo.webp"
+                        alt="Instragram" width="50px"></a>
+            </div>
+            <div class="col-md-6 verdana">
+                <button onclick="askName()">What is Your Name?</button>
+                <p id="askname" class="text verdana"></p>
+            </div>
+            <div class="col-md-6 verdana">
+                <button onclick="askHero()">What is Your Favorite Superhero?</button>
+                <p id="askhero" class="text verdana"></p>
+            </div>
+            <p class="roman">Come Check Us Out Today!</p>
         </div>
     </div>
+    <script>
+        function askName() {
+            let nameParagraph = document.getElementById('askname');
+            let name = prompt("What is Your Name?")
+            // decide what to do
+            if (name === "Batman") {
+                nameParagraph.innerHTML = "Welcome to the Batcave, sir.";
+            } else
+                if (name === "Superman") {
+                    nameParagraph.innerHTML = "Welcome to the Fortress of Solitude, sir.";
+                } else
+                    if (name === "Iron Man") {
+                        nameParagraph.innerHTML = "Welcome to Your Mansion, sir.";
+                    } else
+                        if (name === "Captain America") {
+                            nameParagraph.innerHTML = "Hey, you, you've been sleeping for 50 years.";
+                        } else {
+                            nameParagraph.innerHTML = "Hello " + name + " ,Nice To Meet You!  Come on down to the Mighty Moose Comic Store Today!"
+                        }
+        }
+        function askHero() {
+            let nameParagraph = document.getElementById('askhero');
+            let hero = prompt("Who Is Your Favorite?")
+            // decide what to do
+            nameParagraph.innerHTML = "Wow " + hero + " Is A Great Superhero, Come On Down to the Store and Read About them!"
+        }
+    </script>
 </body>
 
 
